@@ -23,3 +23,6 @@ class TestFizzBuzz:
 
     def test_given_a_6_then_we_get_a_fizz(self):
         assert fizz_buzz(6) == "Fizz"
+
+    def test_given_a_9_then_we_get_a_fizz(self):
+        assert fizz_buzz(9) == "Fizz"
