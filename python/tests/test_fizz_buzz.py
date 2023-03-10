@@ -33,3 +33,7 @@ class TestFizzBuzz:
 
     def test_given_a_5_that_we_expect_to_return_buzz(self):
         assert fizz_buzz(5) == "Buzz"
+
+    def test_given_a_10_that_we_expect_to_return_buzz(self):
+        assert fizz_buzz(10) == "Buzz"
+
