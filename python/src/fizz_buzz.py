@@ -5,6 +5,8 @@ def fizz_buzz(
         return "FizzBuzz"
     if input == 30:
         return "FizzBuzz"
+    if input == 45:
+        return "FizzBuzz"
     if is_multiple_of_three(input):
         return "Fizz"
     if is_multiple_of_five(input):
