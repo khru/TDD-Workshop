@@ -1,4 +1,4 @@
-from src.change_me import fizz_buzz
+from src.fizz_buzz import fizz_buzz
 
 
 class TestFizzBuzz:
