@@ -30,3 +30,6 @@ class TestFizzBuzz:
             expected_result: str,
     ):
         assert fizz_buzz(number) == expected_result
+
+    def test_given_a_5_that_we_expect_to_return_buzz(self):
+        assert fizz_buzz(5) == "Buzz"
