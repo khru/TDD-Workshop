@@ -1,6 +1,5 @@
-class ChangeMe:
 
-    def change_me(
-        self,
-    ) -> bool:
-        return True
+def fizz_buzz(
+    input: int
+) -> bool:
+    return True

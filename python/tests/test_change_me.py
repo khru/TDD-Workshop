@@ -1,14 +1,9 @@
-from src.change_me import ChangeMe
+from src.change_me import fizz_buzz
 
 
-class TestChangeMe:
+class TestFizzBuzz:
 
-    def test_change_me(
-        self,
+    def test_given_a_1_we_expect_a_1(
+            self,
     ):
-        # Given
-        my_class = ChangeMe()
-        # When
-
-        # Then
-        assert my_class.change_me() == True
+        assert fizz_buzz(1) == "1"
