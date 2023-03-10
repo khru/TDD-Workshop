@@ -1,11 +1,7 @@
 def fizz_buzz(
         input: int
 ) -> str:
-    if input == 15:
-        return "FizzBuzz"
-    if input == 30:
-        return "FizzBuzz"
-    if input == 45:
+    if is_multiple_of_fifteen(input):
         return "FizzBuzz"
     if is_multiple_of_three(input):
         return "Fizz"
@@ -20,3 +16,7 @@ def is_multiple_of_three(number: int) -> bool:
 
 def is_multiple_of_five(number: int) -> bool:
     return number % 5 == 0
+
+
+def is_multiple_of_fifteen(number: int) -> bool:
+    return number % 15 == 0

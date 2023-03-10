@@ -43,14 +43,14 @@ class TestFizzBuzz:
     ):
         assert fizz_buzz(number) == expected_result
 
-    def test_given_a_15_then_return_fizzbuzz(self):
-        assert fizz_buzz(15) == "FizzBuzz"
-
-    def test_given_a_30_then_return_fizzbuzz(self):
-        assert fizz_buzz(30) == "FizzBuzz"
-
-    def test_given_a_45_then_return_fizzbuzz(self):
-        assert fizz_buzz(45) == "FizzBuzz"
-
-    #def test_given_a_number_that_is_multiple_of_three_and_five_return_fizzbuzz(
-
+    @pytest.mark.parametrize("number, expected_result",
+                             [(15, "FizzBuzz"),
+                              (30, "FizzBuzz"),
+                              (45, "FizzBuzz"),
+                              ])
+    def test_given_a_number_that_is_multiple_of_three_and_five_return_fizzbuzz(
+            self,
+            number: int,
+            expected_result: str,
+    ):
+        assert fizz_buzz(number) == expected_result
