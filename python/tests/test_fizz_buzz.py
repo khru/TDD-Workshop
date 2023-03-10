@@ -12,3 +12,8 @@ class TestFizzBuzz:
             self,
     ):
         assert fizz_buzz(2) == "2"
+
+    def test_given_a_4_we_expect_a_4(
+            self,
+    ):
+        assert fizz_buzz(4) == "4"
