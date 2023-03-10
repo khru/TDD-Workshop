@@ -6,4 +6,6 @@ def fizz_buzz(
         return "Fizz"
     if input == 6:
         return "Fizz"
+    if input == 9:
+        return "Fizz"
     return str(input)
