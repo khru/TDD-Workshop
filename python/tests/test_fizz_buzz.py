@@ -18,6 +18,5 @@ class TestFizzBuzz:
     ):
         assert fizz_buzz(number) == expected_result
 
-    @pytest.mark.current
     def test_given_a_3_then_we_get_a_fizz(self):
         assert fizz_buzz(3) == "Fizz"
