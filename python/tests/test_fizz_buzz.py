@@ -18,11 +18,15 @@ class TestFizzBuzz:
     ):
         assert fizz_buzz(number) == expected_result
 
-    def test_given_a_3_then_we_get_a_fizz(self):
-        assert fizz_buzz(3) == "Fizz"
-
-    def test_given_a_6_then_we_get_a_fizz(self):
-        assert fizz_buzz(6) == "Fizz"
-
-    def test_given_a_9_then_we_get_a_fizz(self):
-        assert fizz_buzz(9) == "Fizz"
+    @pytest.mark.parametrize("number, expected_result",
+                             [(3, "Fizz"),
+                              (6, "Fizz"),
+                              (9, "Fizz"),
+                              (12, "Fizz"),
+                              ])
+    def test_given_a_number_that_is_multiple_of_three_return_fizz(
+            self,
+            number: int,
+            expected_result: str,
+    ):
+        assert fizz_buzz(number) == expected_result
